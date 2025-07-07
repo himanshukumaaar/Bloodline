@@ -36,7 +36,7 @@ const UploadBBImg = require("./routes/uploadImg");
 //===========================================================
 
 const connectDB = async () => {
-  const DB_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.9k4kzet.mongodb.net/bloodlineDB`;
+  const DB_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@Use your own`;
   try {
     await mongoose.connect(DB_URI,{useNewUrlParser : true});
     console.log(`Mongo DB Connected`);
@@ -52,11 +52,11 @@ connectDB().then(() => {
   });
 })
 
-// mongoose.connect("mongodb+srv://ekanshlohiya98:Bloodline%40she98@cluster0.9k4kzet.mongodb.net/bloodlineDB",{
+// mongoose.connect("Use your own",{
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // });
-// "mongodb+srv://cluster0.9k4kzet.mongodb.net/bloodlineDB"
+// "Use your own"
 
 // BloodBank.updateMany({registered:'false'});
 
