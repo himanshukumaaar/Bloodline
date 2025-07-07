@@ -2,7 +2,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
 const firebaseConfig={
-  apiKey: "AIzaSyB6VJglTXJ2OUAXjiRa9Sivd7TAJfftLy0",
+  apiKey: "Use Your own api key",
   authDomain: "fir-login-react-8118e.firebaseapp.com",
   projectId: "fir-login-react-8118e",
   storageBucket: "fir-login-react-8118e.appspot.com",
