@@ -4,11 +4,14 @@ const router = require("express").Router();
 
 router.post("/uploadImg", async (req, res) => {
     const email = req.body.email;
+    if (typeof email !== "string") {
+        return res.status(400).json({ message: "Invalid email format" });
+    }
     console.log(email);
 
     try {
         const updatedUser = await BloodBank.findOneAndUpdate(
-            { Email: email },
+            { Email: { $eq: email } },
             { $set: { BloodBankImage: req.body.profileImage } },
             { new: true }
         );
